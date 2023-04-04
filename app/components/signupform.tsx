@@ -28,7 +28,7 @@ function SignUp({ DisplaySwitch }: Switch) {
           <IoClose className=" text-gray-600" />
         </button>
       </div>
-      <h2 className=" text-gray-500 pl-4 mb-3">It’s quick and easy.</h2>
+      <h2 className=" text-gray-500 pl-4 mb-3">It&apos;s quick and easy.</h2>
       <div className=" w-full h-[1px] bg-slate-300 "></div>
       <div className=" p-4 flex flex-col">
         <div className=" flex flex-col xl:flex-row justify-between gap-2">

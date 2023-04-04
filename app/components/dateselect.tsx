@@ -14,7 +14,11 @@ function DateSelect({ dataName, dataArray, setVariable }: Data) {
       className=" basis-1/3 border-[1px] rounded-md border-gray-300 px-1 py-2"
     >
       {dataArray.map((data) => {
-        return <option value={data}>{data}</option>;
+        return (
+          <option key={dataArray.indexOf(data)} value={data}>
+            {data}
+          </option>
+        );
       })}
     </select>
   );
