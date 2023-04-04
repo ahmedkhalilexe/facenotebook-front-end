@@ -52,7 +52,7 @@ function Mid() {
               />
             </svg>
             <div className=" flex items-center gap-2 h-11 w-full py-4 px-2 text-lg text-gray-500 rounded-full bg-gray-200 hover:bg-gray-300 cursor-pointer ">
-              what's on ur mind, Name?
+              what&apos;s on ur mind, Name?
             </div>
           </div>
           <div className=" w-full h-[2px] bg-gray-300 mb-2"></div>
@@ -126,7 +126,7 @@ function Mid() {
                     name={user.name}
                   />
                 ) : (
-                  <div></div>
+                  <div key={post.id}></div>
                 )
               )
           )
