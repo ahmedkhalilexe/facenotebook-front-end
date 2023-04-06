@@ -8,11 +8,11 @@ function NavLeft() {
       <div className=" flex justify-center items-center text-white aspect-square w-11 rounded-full bg-black">
         logo
       </div>
-      <div className="flex items-center bg-gray-200 py-2 px-2 rounded-full">
-        <GoSearch className="mr-2 text-gray-500" />
+      <div className="flex justify-center items-center bg-gray-200 py-3 px-3 xl:py-2 xl:px-2 rounded-full">
+        <GoSearch className="xl:mr-2 text-gray-500" />
         <input
           type="text"
-          className=" bg-transparent focus:outline-none"
+          className=" hidden xl:inline bg-transparent focus:outline-none"
           placeholder="Search Facenotebook"
         ></input>
       </div>
