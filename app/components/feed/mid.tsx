@@ -34,7 +34,7 @@ function Mid() {
   }, []);
   return (
     <div className="flex flex-col items-center basis-full">
-      <div className=" w-[700px] flex flex-col items-center ">
+      <div className=" w-4/5 min-w-fit  md:w-[700px] flex flex-col items-center ">
         <div className=" w-3/4  bg-white drop-shadow-md rounded-md  px-3 py-2">
           <div className=" flex items-center gap-2 mb-2">
             <svg
@@ -67,7 +67,7 @@ function Mid() {
                 <path d="M4.5 4.5a3 3 0 00-3 3v9a3 3 0 003 3h8.25a3 3 0 003-3v-9a3 3 0 00-3-3H4.5zM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06z" />
               </svg>
 
-              <span className=" text-md font-medium text-slate-500">
+              <span className=" hidden sm:inline text-md font-medium text-slate-500">
                 Live Video
               </span>
             </div>
@@ -85,7 +85,7 @@ function Mid() {
                 />
               </svg>
 
-              <span className=" text-md font-medium text-slate-500">
+              <span className=" hidden sm:inline text-md font-medium text-slate-500">
                 Photo/video
               </span>
             </div>
@@ -105,7 +105,7 @@ function Mid() {
                 />
               </svg>
 
-              <span className=" text-md font-medium text-slate-500">
+              <span className=" hidden sm:inline text-md font-medium text-slate-500">
                 Feeling/activity
               </span>
             </div>
