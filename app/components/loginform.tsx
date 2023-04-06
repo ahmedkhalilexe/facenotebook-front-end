@@ -1,12 +1,17 @@
 "use client";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 
 import SignUp from "./signupform";
 function Login() {
+  const router = useRouter();
   const [Display, setDisplay] = useState("hidden");
   function DisplaySwitch() {
     Display == "flex" ? setDisplay("hidden") : setDisplay("flex");
   }
+  const handleSignIn = () => {
+    router.push("./feed");
+  };
   return (
     <div>
       <div className=" flex bg-white flex-col pt-4 pb-6 px-4 rounded-lg">
@@ -20,7 +25,10 @@ function Login() {
           className=" h-12 text-black  py-4 pl-4 border-2 rounded-md border-gray-300 outline-blue-600"
           type="password"
         ></input>
-        <button className="bg-blue-700  font-bold text-white text-center py-3 my-4 cursor-pointer rounded-md">
+        <button
+          className="bg-blue-700  font-bold text-white text-center py-3 my-4 cursor-pointer rounded-md"
+          onClick={handleSignIn}
+        >
           Login
         </button>
         <a className=" text-blue-700 text-center cursor-pointer">
